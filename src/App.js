@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
+import Form from "react-bootstrap/Form";
 
 function App() {
 	return (
@@ -21,6 +22,8 @@ function App() {
 				</Navbar>
 
 				<h1 /*Heading section */>Home</h1>
+				<br></br>
+				<br></br>
 
 				<div /*Card section*/>
 					<CardGroup>
@@ -66,6 +69,21 @@ function App() {
 							</Card.Footer>
 						</Card>
 					</CardGroup>
+				</div>
+				<br></br>
+				<br></br>
+
+				<div /*Form section*/>
+					<Form>
+						<Form.Group className="mb-3" controlId="formGroupEmail">
+							<Form.Label>Email address</Form.Label>
+							<Form.Control type="email" placeholder="Enter email" />
+						</Form.Group>
+						<Form.Group className="mb-3" controlId="formGroupPassword">
+							<Form.Label>Password</Form.Label>
+							<Form.Control type="password" placeholder="Password" />
+						</Form.Group>
+					</Form>
 				</div>
 			</div>
 		</>
